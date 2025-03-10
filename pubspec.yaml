@@ -1,0 +1,47 @@
+name: to_do_list
+description: "A Flutter To-Do List application with task management features."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.1        # 状态管理
+  sqflite: ^2.3.2 
+  sqflite_common_ffi: ^2.3.0        # SQLite数据库
+  sqflite_common_ffi_web: ^0.4.2    # Web平台SQLite支持
+  path_provider: ^2.1.2   # 文件路径
+  intl: ^0.19.0           # 日期格式化
+  flutter_local_notifications: ^16.3.2  # 本地通知
+  shared_preferences: ^2.2.2  # 简单数据存储
+  uuid: ^4.3.3            # 生成唯一ID
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  web:
+    generate: true
+    image_path: "assets/image_fx_.jpg"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "assets/image_fx_.jpg"
+    icon_size: 48 
+  image_path: "assets/image_fx_.jpg"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
